@@ -9,45 +9,53 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-          <div class="navigation">
-          <a href="#0" class="header-logo">
-            <img src="svg/noemi-logo.svg" alt="company-logo">       
-          </a> 
-          <nav class="menu">
-            <ul class="menu-list">
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Главная</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Посты</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Статьи</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Теги</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Темы</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Контакты</a>
-              </li>
-            </ul>
-            <div class="menu-burger">
-              <div class="menu-burger-strip"></div>
-              <div class="menu-burger-strip"></div>
-              <div class="menu-burger-strip"></div>
-            </div>
-          </nav>
+      <div class="navigation">
+        <a href="#0" class="header-logo">
+          <img src="svg/noemi-logo.svg" alt="company-logo">       
+        </a> 
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Посты</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Статьи</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Теги</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Темы</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu-burger">
+            <div class="menu-burger-strip"></div>
+            <div class="menu-burger-strip"></div>
+            <div class="menu-burger-strip"></div>
           </div>
+        </nav>
+        </div>
+    </header>
+    <main class="main-page-content">
+        <div class="header-container">
+          <picture>
+            <source srcset="images/banner-bg.jpg" media="(min-width:1201px)">
+            <source srcset="images/banner-bg-tablet.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+            <source srcset="images/banner-mobile.jpg" media="(max-width: 640px)">
+            <img class="header-container-img" src="images/banner-mobile.jpg" alt="Человек на фоне горного пейзажа">
+          </picture>>
           <div class="title-container">
           <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
           </div>
         </div>
-    </header>
-    <aside class="extra-content">
+
+    <section class="extra-content">
         <h2 class="trends-title-box">
           <a class="trends-title" href="#0">сейчас в тренде</a>
         </h2>
@@ -110,7 +118,7 @@
           </div>
           </div>
         </div>
-    </aside>
+      </section>
     <div class="content">
         <main class="main-content">
           <article class="article-container">
@@ -295,9 +303,9 @@
               </div>
               <div class="new-post-container">
                 <time class="new-post-date">14 июня 2019</time>
-                <h2 class="new-post-title">
+                <h4 class="new-post-title">
                 <a class="new-post-title-link" href="#0">10 мест ради которых стоит вернуться</a>
-              </h2>
+              </h4>
                </div>
             </div>
             <div class="new-post">
@@ -306,9 +314,9 @@
               </div>
               <div class="new-post-container">
                 <time class="new-post-date">14 июня 2019</time>
-                <h2 class="new-post-title">
+                <h4 class="new-post-title">
                 <a class="new-post-title-link" href="#0">йога для домашних</a>
-              </h2>
+              </h4>
                </div>
             </div>
             <div class="new-post">
@@ -317,9 +325,9 @@
               </div>
               <div class="new-post-container">
                 <time class="new-post-date">14 июня 2019</time>
-                <h2 class="new-post-title">
+                <h4 class="new-post-title">
                 <a class="new-post-title-link" href="#0">как мы превратили классное место в балкон</a>
-              </h2>
+              </h4>
                </div>
             </div>
             <div class="new-post">
@@ -328,9 +336,9 @@
               </div>
               <div class="new-post-container">
                 <time class="new-post-date">14 июня 2019</time>
-                <h2 class="new-post-title">
+                <h4 class="new-post-title">
                 <a class="new-post-title-link" href="#0">кулинарный подход к науке</a>
-              </h2>
+              </h4>
                </div>
             </div>
             <div class="new-post">
@@ -339,9 +347,9 @@
               </div>
               <div class="new-post-container">
                 <time class="new-post-date">14 июня 2019</time>
-                <h2 class="new-post-title">
+                <h4 class="new-post-title">
                 <a class="new-post-title-link" href="#0">лучшие прически для распущенных волос</a>
-              </h2>
+              </h4>
                </div>
             </div>
           </section>
@@ -437,12 +445,17 @@
       <div class="shop-card-container">
         <div class="item-group">
           <div class="item-picture-container">
-            <img src="images/shop-item-desk1.jpg" alt="pillow-on-the-sofa" class="item-picture">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+              <img src="images/shop-item-desk1.jpg" alt="pillow-on-the-sofa" class="item-picture">
+            </picture>
           </div>
           <div class="item-description-group">
-            <h2 class="item-title-box">
+            <h3 class="item-title-box">
               <a class="item-title" href="#0">подушки на диван</a> 
-            </h2>
+            </h3>
             <p class="item-text">Набор из двух подушек с модными принтами. Видео о создании
               <a href="#0" class="item-text-link">здесь</a>
               .
@@ -458,12 +471,17 @@
         </div>
         <div class="item-group">
           <div class="item-picture-container">
-            <img src="images/shop-item-desk2.jpg" alt="rabbit-doll" class="item-picture">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+              <img src="images/shop-item-desk2.jpg" alt="rabbit-doll" class="item-picture">
+            </picture>
           </div>
           <div class="item-description-group">
-            <h2 class="item-title-box">
+            <h3 class="item-title-box">
               <a class="item-title" href="#0">кукла "зайчик"</a> 
-            </h2>
+            </h3>
             <p class="item-text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
               <a href="#0" class="item-text-link">весенняя серия постов</a>
               в блоге и несколько подкастов
@@ -478,12 +496,17 @@
         </div>
         <div class="item-group">
           <div class="item-picture-container">
-            <img src="images/shop-item-desk3.jpg" alt="six-angle-frame" class="item-picture">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+              <img src="images/shop-item-desk3.jpg" alt="six-angle-frame" class="item-picture">
+            </picture>
           </div>
           <div class="item-description-group">
-            <h2 class="item-title-box">
+            <h3 class="item-title-box">
               <a class="item-title" href="#0">шестиугольная рамка</a> 
-            </h2>
+            </h3>
             <p class="item-text">Необычная рамка для украшения дома из видео
               <a href="#0" class="item-text-link">"Как сделать рамку из подручных средств за 30 минут"</a>
             </p>
@@ -498,6 +521,7 @@
         </div>
       </div>
     </section>
+    </main>>
     <footer class="footer">
         <div class="footer-contaner">
           <address class="social-networks">
