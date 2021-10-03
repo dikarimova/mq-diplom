@@ -23,6 +23,7 @@ html, body {
   position: absolute;
   z-index: 10;
   width: 100%;
+  padding-top: 30px;
 }
 .header-container {
   position: relative;
@@ -57,6 +58,8 @@ html, body {
   padding: 0 15px; 
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 .header-logo {
   width: 180px;
@@ -84,6 +87,7 @@ html, body {
   margin-top: 90px;
   justify-content: center;
   z-index: 3;
+  max-width: 700px;
 }
 .title {
   color: #ffffff;
@@ -270,7 +274,7 @@ html, body {
   margin-top: 40px;
 }
 .aside-content {
-  width: 30%;
+  width: 35%;
 }
 .section-title {
   color: #0f0d0e;
@@ -858,7 +862,6 @@ html, body {
     border-bottom: 3px solid #eeeeee;
     padding-bottom: 20px;
     flex-direction: column;
-    width: 392px;
   }
   .post {
     margin-left: 0;
