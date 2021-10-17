@@ -646,7 +646,7 @@ html, body {
   text-decoration: none;
 }
 .hidden-popup {
-  display: none;
+  /* display: none; */
 }
 .hidden-popup::after {
   content: "";
@@ -670,7 +670,7 @@ html, body {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width: 90%;
+  width: 390px;
 }
 .popup-close {
   margin-left: auto;
@@ -847,6 +847,10 @@ html, body {
     height: 3px;
     background-color: #f4f7f6;
   }
+  .trend-post-preview {
+    width: calc((100% - 6px)/2);
+    margin-bottom: 6px;
+  }
   .content {
     padding-left: 35px;
     padding-right: 35px;
@@ -854,6 +858,12 @@ html, body {
   .title-container {
     padding: 180px 100px 120px;
 
+  }
+  .main-content {
+    width: 390px;
+  }
+  .aside-content {
+    width: 270px;
   }
   .article-image-link {
     width: 100%;
@@ -962,6 +972,7 @@ html, body {
   .post {
     width: 100%;
     margin-left: 0;
+    margin-top: 10px;
     flex-grow: 1;
   }
   .post-text {
@@ -990,5 +1001,8 @@ html, body {
   }
   .item-group {
     width: 100%;
+  }
+  .popup-window {
+    width: 90%;
   }
 }
